@@ -119,5 +119,5 @@ Desarrollado por:
 - Daniel Leonardo Sánchez
 - Daniel Felipe Vargas Gómez
 
-Se programó algoritmo de búsqueda por fuerza bruta y se hace el análisis de complejidad correspondiente.
+Se programó algoritmo de búsqueda de raíces por Fuerza bruta y dos algoritmos voraces: Método de bisección y de Newton Raphson y se hace el análisis de complejidad correspondiente.
 Fecha: 19-04-2022
