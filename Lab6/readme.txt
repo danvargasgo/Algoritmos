@@ -2,9 +2,10 @@ SOLUCIÓN LABORATORIO 6
 Grupo 4
 
 - Santiago Rodríguez Camargo
-- Fredy Alexander Gonzalez Pobre
-- Daniel Leonardo Sánchez
 - Daniel Felipe Vargas Gómez
+- Fredy Alexander Gonzalez Pobre
+- Victor Manuel Torres
+- Daniel Leonardo Sánchez
 
 Se realizó la adaptación para implementación del perceptron simple eligiendo algunos datasets. Sobre el análisis, ubicado en seguida citamos:
 
@@ -32,9 +33,9 @@ class Perceptron:
         self.errors = []                                                               O(1)
 
         #ciclo de entrenamiento
-        for i in range(self.n_iter):                                                   O(n^2)
+        for i in range(self.n_iter):                                                   O(n)
             errors = 0
-            for x_i, target in zip(X,y):                                               O(n)
+            for x_i, target in zip(X,y):                                               O(n^2)
                 #calcular el nuevo valor de los pesos
                 delta_w = np.array((target - self.predict(x_i)) * self.eta)            o(1)
                 #actualizar el valor de los pesos
